@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://dev.buddypress.com/api/';
+$url = 'http://api.buddypress.com/';
 $method = 'GET';
 
 # headers and data (this is API dependent, some uses XML)

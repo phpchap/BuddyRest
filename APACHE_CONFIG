@@ -1,0 +1,24 @@
+# buddypress frontend
+<VirtualHost *:80>
+   ServerName www.buddyrest.com
+   DocumentRoot /var/www/php/BuddyRest/src/wordpress
+   <Directory /var/www/php/BuddyRest/src/wordpress>
+     Options Indexes FollowSymLinks MultiViews
+     AllowOverride None
+     Order allow,deny
+     allow from all
+   </Directory>
+</VirtualHost>
+
+# buddypress api
+<VirtualHost *:80>
+  ServerName api.buddyrest.com
+  DocumentRoot /var/www/php/BuddyRest/src/api
+  <Directory /var/www/php/BuddyRest/src/api/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+</VirtualHost>
+

@@ -1,11 +1,8 @@
 <?php
 $ds = DIRECTORY_SEPARATOR; 
 $src_folder = dirname(__FILE__) . $ds . "..".$ds."wordpress";
-echo $src_folder.$ds."wp-config.php";
-die;
 require_once $src_folder.$ds."wp-config.php";
 
-die;
 /**
  * MySQL DB. All data is stored in data_pdo_mysql database
  * Create an empty MySQL database and set the dbname, username

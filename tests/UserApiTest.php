@@ -12,17 +12,9 @@ class UserApiTest extends PHPUnit_Framework_TestCase
         $this->u = new UserAPI();
     }
     
-    public function testGetUsers() 
+    // make sure we can run tests
+    public function testAssertion() 
     {
-       $requested = $this->u->get();
-       print_r($requested);
+        $this->assertEquals(true, true);
     }
-    /*
-    public function testGetRequested() 
-    {
-       $requested = $this->u->getRequested();
-       print_r($requested);
-    }
-     * 
-     */
 }
