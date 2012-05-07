@@ -1,6 +1,34 @@
 BuddyPress with REST Access
 ---------------------------
 
+This application is based on a clone of wordpress (/src/wordpress), within wordpress there is a submodule of BuddyPress (src/wordpress/wp-content/plugins/buddypress) and there is also a submodule of the REST library restler (src/api/lib/restler) 
+
+there is two parts to this application 
+
+1. the main frontend wordpress/buddypress application (setup as www.buddyrest.com) 
+2. the REST API which includes wp-config from wordpress (setup as api.buddyrest.com)
+
+
+# Installing the application 
+1) clone the BuddyRest repo
+git clone git@github.com:phpchap/BuddyRest.git
+
+2) setup the submodules
+cd BuddyRest # change into project root
+chmod u+x update_submodules.sh # make the update submodules shell script executable 
+./update_submodules.sh # run the update submodules shell script
+
+3) run the unit tests to make sure everythings cool
+phpunit .
+
+Thats all!
+
+
+
+# -----------------
+# Steps i've taken to build this application so far.. 
+mkdir /var/www/php/
+
 # Clone Wordpress GitHub Repo
 git clone https://github.com/WordPress/WordPress.giti src/wordpress
 
