@@ -1,0 +1,3 @@
+[submodule "src/wordpress/wp-content/plugins/buddypress"]
+	path = src/wordpress/wp-content/plugins/buddypress
+	url = https://github.com/dxw/buddypress.git

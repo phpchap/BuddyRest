@@ -1,3 +1,10 @@
 BuddyPress with REST Access
 ---------------------------
 
+git clone https://github.com/WordPress/WordPress.giti src/wordpress
+
+git submodule add https://github.com/dxw/buddypress.git src/wordpress/wp-content/plugins/buddypress
+
+www.buddyrest.com // Wordpress with BuddyPress plugin installed
+api.buddyrest.com // REST Access to BuddyPress
+
