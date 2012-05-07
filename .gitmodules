@@ -1,3 +1,7 @@
 [submodule "src/wordpress/wp-content/plugins/buddypress"]
 	path = src/wordpress/wp-content/plugins/buddypress
 	url = https://github.com/dxw/buddypress.git
+
+[submodule "src/api/lib/Restler"]
+        path = src/api/lib/Restler
+        url = https://github.com/Luracast/Restler.git
