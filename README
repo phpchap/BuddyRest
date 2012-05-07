@@ -1,10 +1,30 @@
 BuddyPress with REST Access
 ---------------------------
 
+# Clone Wordpress GitHub Repo
 git clone https://github.com/WordPress/WordPress.giti src/wordpress
 
+# Added BuddyPress Sub Module
 git submodule add https://github.com/dxw/buddypress.git src/wordpress/wp-content/plugins/buddypress
 
-www.buddyrest.com // Wordpress with BuddyPress plugin installed
-api.buddyrest.com // REST Access to BuddyPress
+# Configure Apache vhosts 
 
+www.buddyrest.com (main frontend wordpress with buddypress installed)
+api.buddyrest.com (REST application with access to Wordpress)
+
+# Install Wordpress 
+
+1. Database name: buddyrest
+2. Database username: root
+3. Database password: root
+4. Database host: localhost
+5. Table prefix: wp_
+
+site title: buddyrest
+username: admin
+password: password
+email: phpchap@gmail.com
+
+# Activate BuddyPress plugin in Wordpress Admin Panel
+
+# Run unit tests
