@@ -8,7 +8,6 @@ there is two parts to this application
 1. the main frontend wordpress/buddypress application (setup as www.buddyrest.com) 
 2. the REST API which includes wp-config from wordpress (setup as api.buddyrest.com)
 
-
 # Installing the application 
 1) clone the BuddyRest repo
 git clone git@github.com:phpchap/BuddyRest.git
@@ -21,7 +20,14 @@ chmod u+x update_submodules.sh # make the update submodules shell script executa
 3) run the unit tests to make sure everythings cool
 phpunit .
 
-Thats all!
+4) configure your apache vhosts
+(ive included my vhost in APACHE_VHOST)
+
+5) setup the wordpress application (you will have to delete and add 'wp-config.php' to .gitignore) or setup your application using my config..
+
+
+thats it!
+
 
 
 
