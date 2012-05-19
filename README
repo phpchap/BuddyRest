@@ -1,6 +1,6 @@
 BuddyPress with REST Access
 ---------------------------
-
+ 
 This application is based on a clone of wordpress (/src/wordpress), within wordpress there is a submodule of BuddyPress (src/wordpress/wp-content/plugins/buddypress) and there is also a submodule of the REST library restler (src/api/lib/restler) 
 
 there is two parts to this application 
